@@ -1,0 +1,4 @@
+const backgroundImage = 'https://i.imgur.com/qA4HPk5.png';
+const vs = 'https://i.imgur.com/v9qHCxb.png';
+const pattern = 'https://i.imgur.com/6mVdZ16.png';
+const bordure = 'https://i.imgur.com/3CVqUMs.png';
