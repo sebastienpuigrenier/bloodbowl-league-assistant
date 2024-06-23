@@ -1,0 +1,12 @@
+
+:root {
+    --pseudo-white: #f0f0f0;
+    --light-grey: #d3d3d3;
+    --dark-grey: #333;
+    --browny-grey: #41403E;
+    --pure-black-shadow-02: hsla(0, 0%, 0%, 0.2);
+    --pure-black-shadow-03: hsla(0, 0%, 0%, 0.3);
+    --navbar-light-selection: #707070;
+    --navbar-background: #444444;
+    --navbar-separator: #9f9f9f;
+}

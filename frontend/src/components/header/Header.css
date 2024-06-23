@@ -1,0 +1,14 @@
+@import url("../../css/colors.css");
+
+.header {
+    position: fixed;
+    height: 4rem;
+    top: 0;
+    width: 100%;
+    background-color: var(--pseudo-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px var(--pure-black-shadow-02);
+    z-index: 10;
+}

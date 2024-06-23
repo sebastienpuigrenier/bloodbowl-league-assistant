@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FondJoueur2 = ({ color }) => {
+const CalqueCouleurEquipe2 = ({ color }) => {
     return (
         <svg
             version="1.0"
@@ -72,4 +72,4 @@ const FondJoueur2 = ({ color }) => {
     );
 };
 
-export default FondJoueur2;
+export default CalqueCouleurEquipe2;

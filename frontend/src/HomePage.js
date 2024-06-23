@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import Header from './components/header/Header';
+import VersusSection from './components/versus-section/VersusSection';
+import Navbar from './components/navbar/Navbar';
+import AboutSection from './components/about-section/AboutSection';
 import './css/HomePage.css';
-import PlayerForms from './components/PlayerForms';
-import Joueur1Formulaire from './components/Joueur1Formulaire';
-import Joueur2Formulaire from './components/Joueur2Formulaire';
-import BackgroundSelection from './components/BackgroundSelection';
 
 const HomePage = () => {
     const [joueur1Image, setJoueur1Image] = useState(null);
@@ -13,25 +13,19 @@ const HomePage = () => {
 
     return (
         <div className="homepage">
-            <h1>Welcome to My One Page Website</h1>
-            <div className="image-section">
-                <BackgroundSelection
-                    couleurFond1={couleurFond1}
-                    couleurFond2={couleurFond2}
-                    joueur1Image={joueur1Image}
-                    joueur2Image={joueur2Image}
-                />
-                <div className="form-container">
-                    <Joueur1Formulaire
-                        setCouleurFond={setCouleurFond1}
-                        setImage={setJoueur1Image}
-                    />
-                    <Joueur2Formulaire
-                        setCouleurFond={setCouleurFond2}
-                        setImage={setJoueur2Image}
-                    />
-                </div>
-            </div>
+            <Header />
+            <Navbar />
+            <VersusSection
+                couleurFond1={couleurFond1}
+                couleurFond2={couleurFond2}
+                joueur1Image={joueur1Image}
+                joueur2Image={joueur2Image}
+                setCouleurFond1={setCouleurFond1}
+                setCouleurFond2={setCouleurFond2}
+                setJoueur1Image={setJoueur1Image}
+                setJoueur2Image={setJoueur2Image}
+            />
+            <AboutSection />
         </div>
     );
 };

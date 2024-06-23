@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Joueur1Formulaire = ({ setCouleurFond, setImage }) => {
+const Equipe1Formulaire = ({ setCouleurFond, setImage }) => {
+    const [colorText, setColorText] = useState('#ffffff');
+
     const handleColorChange = (e) => {
+        setColorText(e.target.value);
+        setCouleurFond(e.target.value);
+    };
+
+    const handleColorTextChange = (e) => {
+        setColorText(e.target.value);
         setCouleurFond(e.target.value);
     };
 
@@ -16,15 +24,25 @@ const Joueur1Formulaire = ({ setCouleurFond, setImage }) => {
     };
 
     return (
-        <div className="joueur-formulaire left">
+        <div className="equipe-formulaire left">
             <div className="color-picker-container">
                 <input
                     type="color"
                     id="couleur-fond-1"
                     className="color-input"
+                    value={colorText}
                     onChange={handleColorChange}
                 />
-                <label htmlFor="image-joueur-1" className="custom-file-upload">
+                <input
+                    type="text"
+                    id="couleur-text-1"
+                    className="color-text-input"
+                    value={colorText}
+                    onChange={handleColorTextChange}
+                />
+            </div>
+            <div className="logo-upload-container">
+                <label htmlFor="image-joueur-1" className="custom-file-upload lined thin">
                     Choisir un logo
                 </label>
                 <input
@@ -38,4 +56,4 @@ const Joueur1Formulaire = ({ setCouleurFond, setImage }) => {
     );
 };
 
-export default Joueur1Formulaire;
+export default Equipe1Formulaire;
